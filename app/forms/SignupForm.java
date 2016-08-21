@@ -19,7 +19,7 @@ public class SignupForm
     @Constraints.Required
     public String firstName;
     @Constraints.Required
-    public String lastname;
+    public String lastName;
 
     public List<ValidationError> validate() {
         List<ValidationError> errors = new ArrayList<>();
@@ -56,11 +56,11 @@ public class SignupForm
         this.firstName = firstName;
     }
 
-    public String getLastname() {
-        return lastname;
+    public String getLastName() {
+        return lastName;
     }
 
-    public void setLastname(String lastname) {
-        this.lastname = lastname;
+    public void setLastName(String lastName) {
+        this.lastName = lastName;
     }
 }
